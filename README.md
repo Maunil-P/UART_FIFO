@@ -13,15 +13,15 @@ This project implements a complete UART communication system including:
 
 ## Project Structure
 UART_FIFO/
-├── src/
-│   ├── baud_timer.v   — clock divider, generates baud_tick pulse
-│   ├── fifo.v         — 8x8 synchronous FIFO with full/empty flags
-│   ├── uart_tx.v      — UART transmitter FSM (IDLE/START/DATA/STOP)
-│   ├── uart_rx.v      — UART receiver FSM with start-bit resync
-│   └── uart_top.v     — top level, wires all modules together
-└── tb/
-├── uart_tx_tb.v   — isolated TX testbench with self-checking decoder
-└── uart_top_tb.v  — full system loopback testbench
+src/
+ baud_timer.v   — clock divider, generates baud_tick pulse
+ fifo.v         — 8x8 synchronous FIFO with full/empty flags
+ uart_tx.v      — UART transmitter FSM (IDLE/START/DATA/STOP)
+ uart_rx.v      — UART receiver FSM with start-bit resync
+ uart_top.v     — top level, wires all modules together
+tb/
+ uart_tx_tb.v   — isolated TX testbench with self-checking decoder
+ uart_top_tb.v  — full system loopback testbench
 
 ## How It Works
 
