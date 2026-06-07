@@ -38,9 +38,6 @@ Because it is UART both sides must be configured to the same baud rate ahead of 
 A synchronous 8-entry FIFO buffers bytes between the CPU/testbench and the TX module. The CPU can write up to 8 bytes in burst and the transmitter drains them one at a time in the background.
 
 ### Baud Rate Configuration
-Default configuration:
-| Parameter | Value |
-|---|---|
 | Clock frequency | 50 MHz |
 | Baud rate | 9600 |
 | CLKS_PER_BAUD | 5208 |
